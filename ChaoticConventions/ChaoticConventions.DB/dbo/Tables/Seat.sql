@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Seat] (
+    [Id]         UNIQUEIDENTIFIER NOT NULL,
+    [Room_Id]    UNIQUEIDENTIFIER NOT NULL,
+    [SeatNumber] NVARCHAR (MAX)   NOT NULL,
+    CONSTRAINT [PK_Seat] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Seat_Room] FOREIGN KEY ([Room_Id]) REFERENCES [dbo].[Room] ([Id])
+);
+

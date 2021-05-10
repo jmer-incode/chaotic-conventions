@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Venue] (
+    [Id]      UNIQUEIDENTIFIER NOT NULL,
+    [Name]    NVARCHAR (MAX)   NOT NULL,
+    [Address] NVARCHAR (MAX)   NOT NULL,
+    CONSTRAINT [PK_Venue] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

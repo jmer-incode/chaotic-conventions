@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Topic] (
+    [Id]    UNIQUEIDENTIFIER NOT NULL,
+    [Topic] NVARCHAR (MAX)   NOT NULL,
+    CONSTRAINT [PK_Topic] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
