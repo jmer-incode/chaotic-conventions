@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ChaoticConventions.Model
 {
-    public class Seat
+    public class Talk
     {
-        public Guid Id { get; set; }
-        public Room InRoom { get; set; }
+        public string Title { get; set; }
+        public Guid Id { get; set; } 
     }
 }

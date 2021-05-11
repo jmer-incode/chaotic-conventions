@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChaoticConventions.Model
 {
-    class Room
+    public class Room
     {
         public string Name { get; set; }
         public int Capacity { get; set; }

@@ -1,6 +1,8 @@
 ﻿CREATE TABLE [dbo].[Talk] (
     [Id]    UNIQUEIDENTIFIER NOT NULL,
-    [Title] NVARCHAR (MAX)   NULL,
+    [Title] NVARCHAR (MAX)   NOT NULL,
     CONSTRAINT [PK_Talk] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
+
 

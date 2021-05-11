@@ -3,6 +3,8 @@
     [Id]       UNIQUEIDENTIFIER NOT NULL,
     [Venue_Id] UNIQUEIDENTIFIER NOT NULL,
     CONSTRAINT [PK_Convention] PRIMARY KEY CLUSTERED ([Id] ASC),
-    CONSTRAINT [FK_Convention_Venue] FOREIGN KEY ([Venue_Id]) REFERENCES [dbo].[Venue] ([Id])
+    CONSTRAINT [FK_Convention_Venue] FOREIGN KEY ([Venue_Id]) REFERENCES [dbo].[Venues] ([Id])
 );
+
+
 

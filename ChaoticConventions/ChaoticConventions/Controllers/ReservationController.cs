@@ -2,7 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
+using ChaoticConventions.Model;
+using ChaoticConventions.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,11 +15,18 @@ namespace ChaoticConventions.Controllers
     [ApiController]
     public class ReservationController : ControllerBase
     {
+        private readonly ISeatReservationService _seatReservationService;
+
+        public ReservationController(ISeatReservationService seatReservationService)
+        {
+            _seatReservationService = seatReservationService;
+        }
         // GET: api/<ReservationController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<SeatReservation> Get(string reservationNumber)
         {
-            return new string[] { "value1", "value2" };
+            //_seatReservationService.GetSeat();
+            throw new NotImplementedException();
         }
 
         // GET api/<ReservationController>/5
